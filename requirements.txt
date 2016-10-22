@@ -3,3 +3,6 @@ requests >= 2.3.0
 pyyaml
 six
 future
+flask-restful
+flask-basicauth
+gevent-socketio

@@ -21,22 +21,22 @@ history = open(here('HISTORY.rst')).read().replace('.. :changelog:', '')
 requirements = [x.strip() for x in open(here('requirements.txt')).readlines()]
 
 setup(
-    name='ouimeaux',
+    name='wemo',
     version='0.8.1',
     description='Open source control for Belkin WeMo devices',
     long_description=readme + '\n\n' + history,
     author='Ian McCracken',
     author_email='ian.mccracken@gmail.com',
-    url='https://github.com/iancmcc/ouimeaux',
+    url='https://github.com/iancmcc/wemo',
     packages=[
-        'ouimeaux',
+        'wemo',
     ],
-    package_dir={'ouimeaux': 'ouimeaux'},
+    package_dir={'wemo': 'wemo'},
     include_package_data=True,
     install_requires=requirements,
     license="BSD",
     zip_safe=False,
-    keywords='ouimeaux',
+    keywords='wemo',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Topic :: Home Automation',
@@ -53,7 +53,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'wemo = ouimeaux.cli:wemo'
+            'wemo = wemo.cli:wemo'
         ]
     },
     extras_require = {

@@ -1,21 +1,21 @@
 ==============================
-ouimeaux
+wemo
 ==============================
 
-.. image:: https://badge.fury.io/py/ouimeaux.png
-    :target: http://badge.fury.io/py/ouimeaux
+.. image:: https://badge.fury.io/py/wemo.png
+    :target: http://badge.fury.io/py/wemo
     
-.. image:: https://travis-ci.org/iancmcc/ouimeaux.png?branch=develop
-        :target: https://travis-ci.org/iancmcc/ouimeaux
+.. image:: https://travis-ci.org/iancmcc/wemo.png?branch=develop
+        :target: https://travis-ci.org/iancmcc/wemo
 
-.. image:: https://pypip.in/d/ouimeaux/badge.png
-        :target: https://crate.io/packages/ouimeaux?version=latest
+.. image:: https://pypip.in/d/wemo/badge.png
+        :target: https://crate.io/packages/wemo?version=latest
 
 
 Open source control for Belkin WeMo devices
 
 * Free software: BSD license
-* Documentation: http://ouimeaux.rtfd.org.
+* Documentation: http://wemo.rtfd.org.
 
 Features
 --------

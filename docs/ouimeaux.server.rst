@@ -1,13 +1,13 @@
-ouimeaux.server package
+wemo.server package
 =======================
 
 Submodules
 ----------
 
-ouimeaux.server.settings module
+wemo.server.settings module
 -------------------------------
 
-.. automodule:: ouimeaux.server.settings
+.. automodule:: wemo.server.settings
     :members:
     :undoc-members:
     :show-inheritance:
@@ -16,7 +16,7 @@ ouimeaux.server.settings module
 Module contents
 ---------------
 
-.. automodule:: ouimeaux.server
+.. automodule:: wemo.server
     :members:
     :undoc-members:
     :show-inheritance:

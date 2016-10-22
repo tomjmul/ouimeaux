@@ -1,21 +1,21 @@
-ouimeaux.device.api.xsd package
+wemo.device.api.xsd package
 ===============================
 
 Submodules
 ----------
 
-ouimeaux.device.api.xsd.device module
+wemo.device.api.xsd.device module
 -------------------------------------
 
-.. automodule:: ouimeaux.device.api.xsd.device
+.. automodule:: wemo.device.api.xsd.device
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.device.api.xsd.service module
+wemo.device.api.xsd.service module
 --------------------------------------
 
-.. automodule:: ouimeaux.device.api.xsd.service
+.. automodule:: wemo.device.api.xsd.service
     :members:
     :undoc-members:
     :show-inheritance:
@@ -24,7 +24,7 @@ ouimeaux.device.api.xsd.service module
 Module contents
 ---------------
 
-.. automodule:: ouimeaux.device.api.xsd
+.. automodule:: wemo.device.api.xsd
     :members:
     :undoc-members:
     :show-inheritance:

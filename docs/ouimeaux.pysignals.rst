@@ -1,29 +1,29 @@
-ouimeaux.pysignals package
+wemo.pysignals package
 ==========================
 
 Submodules
 ----------
 
-ouimeaux.pysignals.dispatcher module
+wemo.pysignals.dispatcher module
 ------------------------------------
 
-.. automodule:: ouimeaux.pysignals.dispatcher
+.. automodule:: wemo.pysignals.dispatcher
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.pysignals.inspect module
+wemo.pysignals.inspect module
 ---------------------------------
 
-.. automodule:: ouimeaux.pysignals.inspect
+.. automodule:: wemo.pysignals.inspect
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.pysignals.weakref_backports module
+wemo.pysignals.weakref_backports module
 -------------------------------------------
 
-.. automodule:: ouimeaux.pysignals.weakref_backports
+.. automodule:: wemo.pysignals.weakref_backports
     :members:
     :undoc-members:
     :show-inheritance:
@@ -32,7 +32,7 @@ ouimeaux.pysignals.weakref_backports module
 Module contents
 ---------------
 
-.. automodule:: ouimeaux.pysignals
+.. automodule:: wemo.pysignals
     :members:
     :undoc-members:
     :show-inheritance:

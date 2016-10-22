@@ -1,13 +1,13 @@
-ouimeaux.examples package
+wemo.examples package
 =========================
 
 Submodules
 ----------
 
-ouimeaux.examples.watch module
+wemo.examples.watch module
 ------------------------------
 
-.. automodule:: ouimeaux.examples.watch
+.. automodule:: wemo.examples.watch
     :members:
     :undoc-members:
     :show-inheritance:
@@ -16,7 +16,7 @@ ouimeaux.examples.watch module
 Module contents
 ---------------
 
-.. automodule:: ouimeaux.examples
+.. automodule:: wemo.examples
     :members:
     :undoc-members:
     :show-inheritance:

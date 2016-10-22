@@ -1,4 +1,4 @@
-ouimeaux.device package
+wemo.device package
 =======================
 
 Subpackages
@@ -6,39 +6,39 @@ Subpackages
 
 .. toctree::
 
-    ouimeaux.device.api
+    wemo.device.api
 
 Submodules
 ----------
 
-ouimeaux.device.insight module
+wemo.device.insight module
 ------------------------------
 
-.. automodule:: ouimeaux.device.insight
+.. automodule:: wemo.device.insight
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.device.lightswitch module
+wemo.device.lightswitch module
 ----------------------------------
 
-.. automodule:: ouimeaux.device.lightswitch
+.. automodule:: wemo.device.lightswitch
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.device.motion module
+wemo.device.motion module
 -----------------------------
 
-.. automodule:: ouimeaux.device.motion
+.. automodule:: wemo.device.motion
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.device.switch module
+wemo.device.switch module
 -----------------------------
 
-.. automodule:: ouimeaux.device.switch
+.. automodule:: wemo.device.switch
     :members:
     :undoc-members:
     :show-inheritance:
@@ -47,7 +47,7 @@ ouimeaux.device.switch module
 Module contents
 ---------------
 
-.. automodule:: ouimeaux.device
+.. automodule:: wemo.device
     :members:
     :undoc-members:
     :show-inheritance:

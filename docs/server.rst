@@ -8,7 +8,7 @@ device control and a REST API allowing integration with any number of services.
 The necessary dependencies to run the server are not installed unless the
 ``server`` feature is specified at installation::
 
-    $ pip install ouimeaux[server]
+    $ pip install wemo[server]
 
 Configuration
 -------------

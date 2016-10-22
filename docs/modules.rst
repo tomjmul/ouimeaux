@@ -1,7 +1,7 @@
-ouimeaux
+wemo
 ========
 
 .. toctree::
    :maxdepth: 4
 
-   ouimeaux
+   wemo

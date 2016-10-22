@@ -1,21 +1,21 @@
-ouimeaux.xsd package
+wemo.xsd package
 ====================
 
 Submodules
 ----------
 
-ouimeaux.xsd.device module
+wemo.xsd.device module
 --------------------------
 
-.. automodule:: ouimeaux.xsd.device
+.. automodule:: wemo.xsd.device
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.xsd.service module
+wemo.xsd.service module
 ---------------------------
 
-.. automodule:: ouimeaux.xsd.service
+.. automodule:: wemo.xsd.service
     :members:
     :undoc-members:
     :show-inheritance:
@@ -24,7 +24,7 @@ ouimeaux.xsd.service module
 Module contents
 ---------------
 
-.. automodule:: ouimeaux.xsd
+.. automodule:: wemo.xsd
     :members:
     :undoc-members:
     :show-inheritance:

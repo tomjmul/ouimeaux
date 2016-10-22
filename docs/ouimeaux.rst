@@ -1,4 +1,4 @@
-ouimeaux package
+wemo package
 ================
 
 Subpackages
@@ -6,66 +6,66 @@ Subpackages
 
 .. toctree::
 
-    ouimeaux.device
-    ouimeaux.examples
-    ouimeaux.pysignals
-    ouimeaux.server
+    wemo.device
+    wemo.examples
+    wemo.pysignals
+    wemo.server
 
 Submodules
 ----------
 
-ouimeaux.cli module
+wemo.cli module
 -------------------
 
-.. automodule:: ouimeaux.cli
+.. automodule:: wemo.cli
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.config module
+wemo.config module
 ----------------------
 
-.. automodule:: ouimeaux.config
+.. automodule:: wemo.config
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.discovery module
+wemo.discovery module
 -------------------------
 
-.. automodule:: ouimeaux.discovery
+.. automodule:: wemo.discovery
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.environment module
+wemo.environment module
 ---------------------------
 
-.. automodule:: ouimeaux.environment
+.. automodule:: wemo.environment
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.signals module
+wemo.signals module
 -----------------------
 
-.. automodule:: ouimeaux.signals
+.. automodule:: wemo.signals
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.subscribe module
+wemo.subscribe module
 -------------------------
 
-.. automodule:: ouimeaux.subscribe
+.. automodule:: wemo.subscribe
     :members:
     :undoc-members:
     :show-inheritance:
 
-ouimeaux.utils module
+wemo.utils module
 ---------------------
 
-.. automodule:: ouimeaux.utils
+.. automodule:: wemo.utils
     :members:
     :undoc-members:
     :show-inheritance:
@@ -74,7 +74,7 @@ ouimeaux.utils module
 Module contents
 ---------------
 
-.. automodule:: ouimeaux
+.. automodule:: wemo
     :members:
     :undoc-members:
     :show-inheritance:

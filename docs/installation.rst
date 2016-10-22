@@ -6,21 +6,21 @@ Basic
 -----
 At the command line::
 
-    $ easy_install ouimeaux
+    $ easy_install wemo
 
 Or, if you have virtualenvwrapper installed::
 
-    $ mkvirtualenv ouimeaux
-    $ pip install ouimeaux
+    $ mkvirtualenv wemo
+    $ pip install wemo
 
 If you want to enable ``wemo server`` functionality, specify the ``server``
 feature to install the necessary dependencies::
 
-    $ pip install ouimeaux[server]
+    $ pip install wemo[server]
 
 Linux
 -----
-ouimeaux requires Python header files to build some dependencies, and is
+wemo requires Python header files to build some dependencies, and is
 installed normally using pip or easy_install.
 
 Debian/Ubuntu::
@@ -39,7 +39,7 @@ execute::
 
 Windows
 -------
-ouimeaux requires gevent version 1.0rc2 or higher. If you don't have the 
+wemo requires gevent version 1.0rc2 or higher. If you don't have the 
 ability to compile gevent and greenlet (a sub-dependency) locally, you can 
 find and download the binary installers for these packages here:
 

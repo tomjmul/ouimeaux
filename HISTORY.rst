@@ -5,7 +5,7 @@ History
 
 Release 0.8.0 (July 30, 2016)
 +++++++++++++++++++++++++++++
-- Randomize subscription ports to enable simultaneous ouimeaux scripts (thanks @bennytheshap)
+- Randomize subscription ports to enable simultaneous wemo scripts (thanks @bennytheshap)
 - Fix for WeMo LED Light support (thanks @sstangle73)
 - #32: Removed address cache, broke server out into optional feature
 - Fix for Maker state reporting (thanks @pavoni)

@@ -2,18 +2,18 @@
 # -*- coding: utf-8 -*-
 
 """
-test_ouimeaux
+test_wemo
 ----------------------------------
 
-Tests for `ouimeaux` module.
+Tests for `wemo` module.
 """
 
 import unittest
 
 
-import ouimeaux
+import wemo
 
-class TestOuimeaux(unittest.TestCase):
+class TestWemo(unittest.TestCase):
 
     def setUp(self):
         pass

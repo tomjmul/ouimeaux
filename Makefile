@@ -24,7 +24,7 @@ clean-pyc:
 	find . -name '*~' -exec rm -f {} +
 
 lint:
-	flake8 ouimeaux tests
+	flake8 wemo tests
 
 test:
 	python setup.py test
@@ -33,15 +33,15 @@ test-all:
 	tox
 
 coverage:
-	coverage run --source ouimeaux setup.py test
+	coverage run --source wemo setup.py test
 	coverage report -m
 	coverage html
 	open htmlcov/index.html
 
 docs:
-	rm -f docs/ouimeaux.rst
+	rm -f docs/wemo.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ ouimeaux
+	sphinx-apidoc -o docs/ wemo
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html

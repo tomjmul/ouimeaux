@@ -1,4 +1,4 @@
-ouimeaux.device.api package
+wemo.device.api package
 ===========================
 
 Subpackages
@@ -6,15 +6,15 @@ Subpackages
 
 .. toctree::
 
-    ouimeaux.device.api.xsd
+    wemo.device.api.xsd
 
 Submodules
 ----------
 
-ouimeaux.device.api.service module
+wemo.device.api.service module
 ----------------------------------
 
-.. automodule:: ouimeaux.device.api.service
+.. automodule:: wemo.device.api.service
     :members:
     :undoc-members:
     :show-inheritance:
@@ -23,7 +23,7 @@ ouimeaux.device.api.service module
 Module contents
 ---------------
 
-.. automodule:: ouimeaux.device.api
+.. automodule:: wemo.device.api
     :members:
     :undoc-members:
     :show-inheritance:

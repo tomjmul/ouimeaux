@@ -7,7 +7,7 @@ Environment
 The main interface is presented by an ``Environment``, which optionally accepts
 functions called when a Switch or Motion device is identified::
 
-    >>> from ouimeaux.environment import Environment
+    >>> from wemo.environment import Environment
     >>>
     >>> def on_switch(switch):
     ...     print "Switch found!", switch.name
@@ -69,7 +69,7 @@ Events
 ------
 .. warning:: This events framework is deprecated and will be removed prior to the 1.0 release. Please use the signals framework.
 
-By default, ouimeaux subscribes to property change events on discovered
+By default, wemo subscribes to property change events on discovered
 devices (this can be disabled by passing ``with_subscribers=False`` to the
 ``Environment`` constructor). You can register callbacks that will be called
 when switches and motions change state (on/off, or motion detected)::
@@ -88,7 +88,7 @@ Signals
 -------
 A simple signals framework (using pysignals_) is included to replace the
 rudimentary events in earlier releases. These are found in the
-`ouimeaux.signals` module. Signal handlers may be registered using the
+`wemo.signals` module. Signal handlers may be registered using the
 ``receiver`` decorator and must have the signature ``sender, **kwargs``::
 
     @receiver(devicefound)
@@ -132,7 +132,7 @@ See the pysignals_ documentation for further information.
 
 Example: Registering a handler for when a Light Switch switches on or off::
 
-    from ouimeaux.signals import statechange, receiver
+    from wemo.signals import statechange, receiver
 
     env = Environment(); env.start()
     env.discover(5)
@@ -187,4 +187,4 @@ Examples
 Detailed examples_ are included in the source demonstrating common use cases.
 Suggestions (or implementations) for more are always welcome.
 
-.. _examples: https://github.com/iancmcc/ouimeaux/tree/develop/ouimeaux/examples
+.. _examples: https://github.com/iancmcc/wemo/tree/develop/wemo/examples
