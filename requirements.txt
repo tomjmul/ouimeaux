@@ -6,3 +6,5 @@ future
 flask-restful
 flask-basicauth
 gevent-socketio
+configure
+yapsy

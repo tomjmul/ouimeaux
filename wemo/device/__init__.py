@@ -12,7 +12,6 @@ log = logging.getLogger(__name__)
 class DeviceUnreachable(Exception): pass
 class UnknownService(Exception): pass
 
-
 class Device(object):
     def __init__(self, url):
         self._state = None
@@ -69,6 +68,14 @@ class Device(object):
             for aname, action in svc.actions.items():
                 print("  %s(%s)" % (aname, ', '.join(action.args)))
             print()
+
+    def serialise(self):
+        return {'name': self.name,
+                'type': self.__class__.__name__,
+                'serialnumber': self.serialnumber,
+                'state': self.get_state(),
+                'model': self.model,
+                'host': self.host}        
 
     @property
     def model(self):

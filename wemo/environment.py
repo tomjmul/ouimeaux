@@ -200,9 +200,8 @@ class Environment(object):
         return self._bridges.keys()
 
     def get(self, name):
-        alias = self._config.aliases.get(name)
-        if alias:
-            matches = lambda x: x == alias
+        if self._config.aliases and self._config.aliases[name]:
+            matches = lambda x: x == self._config.aliases[name]
         elif name:
             matches = matcher(name)
         else:

@@ -14,6 +14,7 @@ from wemo.device.switch import Switch
 from wemo.device.insight import Insight
 from wemo.device.maker import Maker
 from wemo.environment import Environment, UnknownDevice
+from wemo.pluginmanager import PluginManager
 from socketio import socketio_manage
 from socketio.namespace import BaseNamespace
 from socketio.mixins import BroadcastMixin
@@ -27,9 +28,11 @@ log = logging.getLogger(__name__)
 
 ENV = None
 
+pluginManager = PluginManager()
 
 def initialize(bind=None, auth=None):
     global ENV
+    pluginManager.start()
     if ENV is None:
         ENV = Environment(bind=bind)
         ENV.start()
@@ -43,42 +46,6 @@ def initialize(bind=None, auth=None):
         app.config['BASIC_AUTH_PASSWORD'] = password
         app.config['BASIC_AUTH_FORCE'] = True
         basic_auth = BasicAuth(app)
-
-
-def serialize(device):
-    if isinstance(device, Insight):
-      return {'name': device.name,
-              'type': device.__class__.__name__,
-              'serialnumber': device.serialnumber,
-              'state': device.get_state(),
-              'model': device.model,
-              'host': device.host,
-              'lastchange': str(device.last_change),
-              'onfor': device.on_for,
-              'ontoday': device.today_on_time,
-              'ontotal': device.ontotal,
-              'todaymw': device.today_kwh,
-              'totalmw': device.totalmw,
-              'currentpower': device.current_power
-              }
-    elif isinstance(device, Maker):
-       return {'name': device.name,
-              'type': device.__class__.__name__,
-              'serialnumber': device.serialnumber,
-              'state': device.get_state(),
-              'model': device.model,
-              'host': device.host,
-              'hassensor' : device.has_sensor,
-              'switchmode' : device.switch_mode,
-              'sensor' : device.sensor_state
-              }
-    return {'name': device.name,
-            'type': device.__class__.__name__,
-            'serialnumber': device.serialnumber,
-            'state': device.get_state(),
-            'model': device.model,
-            'host': device.host}
-
 
 def get_device(name, should_abort=True):
     try:
@@ -134,9 +101,8 @@ api.add_resource(DeviceResource, '/api/device/<string:name>')
 class SocketNamespace(BaseNamespace):
 
     def update_state(self, sender, **kwargs):
-        data = serialize(sender)
+        data = sender.serialise()
         data['state'] = kwargs.get('state', data['state'])
-        log.info(data)
         self.emit("send:devicestate", data)
 
     def on_statechange(self, data):
@@ -156,6 +122,7 @@ class SocketNamespace(BaseNamespace):
 @app.route("/socket.io/<path:path>")
 def run_socketio(**kwargs):
     socketio_manage(request.environ, {'': SocketNamespace})
+    return "ok"
 
 
 # routing for basic pages (pass routing onto the Angular app)

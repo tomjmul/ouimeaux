@@ -288,17 +288,16 @@ def status(args):
 
 
 def server(args):
-    try:
-        from socketio.server import SocketIOServer
-        from wemo.server import app, initialize
-    except ImportError:
-        print("wemo server dependencies are not installed. Please run, e.g., 'pip install wemo[server]'")
-        sys.exit(1)
-    initialize(bind=getattr(args, 'bind', None), auth=(WemoConfiguration().auth or None))
+    from socketio.server import SocketIOServer
+    from wemo.server import app, initialize
+
     level = logging.INFO
     if getattr(args, 'debug', False):
         level = logging.DEBUG
     logging.basicConfig(level=level)
+
+    initialize(bind=getattr(args, 'bind', None), auth=(WemoConfiguration().auth or None))
+
     try:
         # TODO: Move this to configuration
         listen = WemoConfiguration().listen or '0.0.0.0:5000'

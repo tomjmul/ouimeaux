@@ -1,6 +1,8 @@
 import os
 import yaml
 
+from configure import Configuration
+
 
 def in_home(*path):
     try:
@@ -47,20 +49,28 @@ aliases:
 # auth: admin:password
 """)
         with open(filename, 'r') as cfg:
-            self._parsed = yaml.load(cfg)
+            self.config = Configuration.from_file(filename).configure()
 
     @property
     def aliases(self):
-        return self._parsed.get('aliases') or {}
+        return self.config.get('aliases', {})
 
     @property
     def bind(self):
-        return self._parsed.get('bind', None)
+        return self.config.get('bind', None)
 
     @property
     def listen(self):
-        return self._parsed.get('listen', None)
+        return self.config.get('listen', None)
 
     @property
     def auth(self):
-        return self._parsed.get('auth', None)
+        return self.config.get('auth', None)
+
+    @property
+    def plugins_directory(self):
+        return self.config.get('pluginsDirectory', {})
+
+    @property
+    def plugins(self):
+        return self.config.get('plugins', {})

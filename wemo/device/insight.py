@@ -31,6 +31,22 @@ class Insight(Switch):
                 'totalmw': int(float(totalmw)),
                 'currentpower': int(float(currentmw))}
 
+    def serialise():
+        return {'name': self.name,
+                'type': self.__class__.__name__,
+                'serialnumber': self.serialnumber,
+                'state': self.get_state(),
+                'model': self.model,
+                'host': self.host,
+                'lastchange': str(self.last_change),
+                'onfor': self.on_for,
+                'ontoday': self.today_on_time,
+                'ontotal': self.ontotal,
+                'todaymw': self.today_kwh,
+                'totalmw': self.totalmw,
+                'currentpower': self.current_power
+        }
+
     @property
     def today_kwh(self):
         return self.insight_params['todaymw'] * 1.6666667e-8

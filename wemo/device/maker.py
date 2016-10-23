@@ -57,6 +57,18 @@ class Maker(Device):
              'sensorstate' : int(sensorstate),
         		 'switchmode' : int(switchmode),
         		 'hassensor' : int(hassensor)}
+        
+        def serialise(self):
+            return {'name': self.name,
+                  'type': self.__class__.__name__,
+                  'serialnumber': self.serialnumber,
+                  'state': self.get_state(),
+                  'model': self.model,
+                  'host': self.host,
+                  'hassensor' : self.has_sensor,
+                  'switchmode' : self.switch_mode,
+                  'sensor' : self.sensor_state
+                  }
 
     @property
     def switch_state(self):
